@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    background-color: #FFFFFF;
     color: #333333;
     font-size: 0.875rem;
     position: relative;
@@ -39,7 +38,7 @@ li {
 
 .content {
     padding-top: 120px;
-    margin-bottom: 160px;
+    padding-bottom: 160px;
 }
 
 .site-title a {
@@ -56,8 +55,6 @@ li {
 
 
 
-/* ここからheader */
-
 #header {
     width: 100%;
     height: 80px;
@@ -72,14 +69,13 @@ li {
 }
 
 #navi {
+    position: fixed;
     width: 300px;
     padding: 36px 50px;
     top: 0;
     left: -300px;
-    width: 300px;
     opacity: 0;
     color: #FFFFFF;
-    padding: 36px 50px;
     transition: all 0.5s;
     z-index: 20;
 }
@@ -114,7 +110,6 @@ li {
     background-color: #333333;
     transition: all 0.5s;
     position: absolute;
-    left: 0;
 }
 
 .hamburger span:nth-child(1) {
@@ -157,6 +152,8 @@ li {
     z-index: 10;
 }
 
+
+
 #top {
     padding-top: 80px;
     padding-bottom: 160px;
@@ -191,4 +188,168 @@ li {
 
 .pagination li {
     padding: 0 20px;
+}
+
+
+
+#item {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#item .item-text {
+    width: 42%;
+}
+
+#item .item-text p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#item .item-text dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#item .item-text dt {
+    width: 30%;
+}
+
+#item .item-text dd {
+    width: 70%;
+}
+
+#item .itemimg {
+    width: 50%;
+}
+
+
+
+#about {
+    max-width: 600px;
+}
+
+#about p {
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+
+
+#company {
+    max-width: 600px;
+}
+
+#company dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#company dt {
+    width: 30%;
+    border-bottom: solid 1px #DCDBDB;
+    padding: 20px 10px;
+}
+
+#company dt:last-of-type {
+    border-bottom: none;
+}
+
+#company dd {
+    width: 70%;
+    border-bottom: solid 1px #DCDBDB;
+    padding: 20px 10px;
+}
+
+#company dd:last-of-type {
+    border-bottom: none;
+}
+
+#company .map {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#company .map iframe {
+    width: 600px;
+    height: 300px;
+    border: 0;
+}
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+#footer .footer-list {
+    display: flex;
+}
+
+#footer .footer-list li {
+    font-size: 0.75rem;
+    margin-right: 30px;
+}
+
+#footer .copyright {
+    font-size: 0.625rem;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .main-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
+
+
+    #item {
+        flex-direction: column;
+    }
+
+    #item .item-text {
+        width: 100%;
+    }
+    
+    #item .itemimg {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+
+    #company dl {
+        flex-direction: column;
+    }
+
+    #company dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    #company dd {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer .footer-list {
+        margin-bottom: 5px;
+    }
 }
