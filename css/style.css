@@ -69,87 +69,87 @@ li {
 }
 
 #navi {
-    position: fixed;
-    width: 300px;
-    padding: 36px 50px;
-    top: 0;
-    left: -300px;
-    opacity: 0;
-    color: #FFFFFF;
-    transition: all 0.5s;
-    z-index: 20;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
 }
-
+ 
 #navi a {
-    color: #FFFFFF;
+  color: #fff;
 }
 
-#mnavi li {
-    margin-bottom: 14px;
+#navi li {
+  margin-bottom: 14px;
 }
 
 .open #navi {
-    left: 0;
-    opacity: 1;
+  left: 0;
+  opacity: 1;
 }
 
 .hamburger {
-    height: 30px;
-    width: 30px;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.5s;
-    z-index: 20;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
 }
 
 .hamburger span {
-    display: block;
-    height: 2px;
-    width: 30px;
-    border-radius: 4px;
-    background-color: #333333;
-    transition: all 0.5s;
-    position: absolute;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
 }
 
 .hamburger span:nth-child(1) {
-    top: 10px;
+  top: 10px;
 }
 
 .hamburger span:nth-child(2) {
-    bottom: 10px;
+  bottom: 10px;
 }
 
 .open .hamburger span {
-    background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .open .hamburger span:nth-child(1) {
-    -webkit-transform: translateY(4px) rotate(-45deg);
-    transform: translateY(4px) rotate(-45deg);
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
 }
 
 .open .hamburger span:nth-child(2) {
-    -webkit-transform: translateY(-4px) rotate(45deg);
-    transform: translateY(-4px) rotate(45deg);
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
 }
 
 #mask {
-    display: none;
-    transition: all 0.5s;
+  display: none;
+  transition: all 0.5s;
 }
 
 .open #mask {
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    cursor: pointer;
-    display: block;
-    opacity: 0.8;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
 }
 
 
